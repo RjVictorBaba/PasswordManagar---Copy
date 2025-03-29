@@ -1,11 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Password Manager</title>
+    
+    <!-- ✅ Link External CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <h2>Welcome to Password Manager</h2>
-    <a href="{{ url_for('signup') }}">Sign Up</a> |
-    <a href="{{ url_for('login') }}">Login</a>
+
+    <!-- 🔐 Header Section -->
+    <header>
+        <h1>Password Manager</h1>
+        <p>Securely store and manage your passwords</p>
+    </header>
+
+    <!-- 🚀 Main Content -->
+    <main class="container">
+        <h2>Welcome to Password Manager</h2>
+        <p>Your passwords are safe, encrypted, and always accessible.</p>
+
+        <!-- 🔥 Action Buttons -->
+        <div class="buttons">
+            <a class="btn btn-primary" href="{{ url_for('signup') }}">🔑 Sign Up</a>
+            <a class="btn btn-secondary" href="{{ url_for('login') }}">🚀 Login</a>
+        </div>
+    </main>
+
+    <!-- 📌 Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 RJ Victor Baba. All rights reserved.</p>
+    </footer>
+
 </body>
 </html>
